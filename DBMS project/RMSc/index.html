@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Restaurant</title>
+</head>
+<body>
+    <div class="navbar" id="home">
+        <nav id="navbr">
+            <img id= "log" class="logo" src="assets/logof.png" alt=""> 
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About US</a></li>
+                <li><a href="#ourteam">Our Team</a></li>
+                <li><a href="#contactus">Contact US</a></li>
+            </ul>
+        </nav>
+        <div class="contents">
+            <h1>Hello World!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eligendi adipisci possimus neque, repellat cupiditate, aut quasi, deleniti blanditiis maxime totam? Odio totam necessitatibus in quis neque perferendis dolor ut quidem rerum porro possimus, quaerat aut ipsa fugiat nemo eveniet natus nisi voluptate commodi consequatur reiciendis amet blanditiis nam consectetur!</p>     
+            
+            <button class="button-52" role = "button" id="logi">Login</button>
+            <button class="button-52" role="button" id="reg">Registration</button> 
+            
+        </div>
+    </div>
+    <div class="aboutUS" id="aboutus">
+        <h1 class="abus">About US</h1>
+        <div class="intru">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, amet! Delectus ea ullam, voluptas fugit aliquam dicta dolorem distinctio expedita pariatur aspernatur molestiae soluta rerum ducimus totam sit tenetur doloribus obcaecati, possimus accusamus sequi reprehenderit. Rem soluta officia eligendi aut excepturi inventore numquam atque, fugiat earum. Enim corrupti distinctio aliquam.</p>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img class= "img" src="assets/target.png" alt="">
+                <div class="intro">
+                    <h2 class="head">Our Mission</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, error quaerat illo, cum dolorem exercitationem obcaecati quos consequuntur architecto, vel id magnam. Maxime dolorem officia sunt cum quibusdam, corrupti molestias doloremque, esse sapiente iure vitae totam veritatis ratione explicabo autem!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class= "img" src="assets/vision.png" alt="">
+                <div class="intro">
+                    <h2 class="head">Our Vision</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, error quaerat illo, cum dolorem exercitationem obcaecati quos consequuntur architecto, vel id magnam. Maxime dolorem officia sunt cum quibusdam, corrupti molestias doloremque, esse sapiente iure vitae totam veritatis ratione explicabo autem!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class= "img" src="assets/target.png" alt="">
+                <div class="intro">
+                    <h2 class="head">Our Values</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, error quaerat illo, cum dolorem exercitationem obcaecati quos consequuntur architecto, vel id magnam. Maxime dolorem officia sunt cum quibusdam, corrupti molestias doloremque, esse sapiente iure vitae totam veritatis ratione explicabo autem!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ourTeam" id="ourteam">
+        <h1>Our Team</h1>
+        <div class="profiles">
+            <div class="profile">
+                <img src="assets/hira.jpg" alt="">
+                <h3 class="name">Hazera Khatun Hira</h3>
+                <h4 class="designation">Database Manager</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae debitis reprehenderit, autem beatae corrupti ex, repudiandae dolor enim labore officiis sapiente odio nemo recusandae ipsam ipsa ea tempore rem nihil.</p>
+            </div>
+
+            <div class="profile">
+                <img src="assets/dip.jpg" alt="">
+                <h3 class="name">Dip Saha</h3>
+                <h4 class="designation">Frontend and Backend Manager</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident eveniet facilis consequuntur consequatur sapiente? Accusamus laborum at voluptate laudantium, nulla, facilis delectus sapiente libero tempora consequuntur, similique facere ut.</p>
+            </div>
+
+            <div class="profile">
+                <img src="assets/asif.jpg" alt="">
+                <h3 class="name">Asif Mahmud</h3>
+                <h4 class="designation">Frontend Manager</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nesciunt quia porro? Possimus magnam doloremque expedita fuga sapiente, nihil officiis eaque reiciendis rem sit? Atque laboriosam autem nostrum beatae at.</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="js/sticky.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.1.js">
+        
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                $(".contents").css("opacity", 1 - $(window).scrollTop() / 250) ;
+            })
+        })
+    </script>
+</body>
+</html>

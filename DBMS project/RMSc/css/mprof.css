@@ -1,0 +1,33 @@
+* {
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    text-align: center;
+}
+
+.myrpof {
+    width: 500px;
+    height: 600px;
+    background: rgba(0,0,0,0.8);
+    margin-left: 35%;
+    margin-top: 12px;
+    display: block;
+    color: #fff;
+    display: block;
+    
+    padding: 7%;
+}
+
+.name {
+    margin-top: 4%;
+    margin-left: 47%;
+    font-weight: bold;
+    font-size: 30px;
+}
+.myrpof p{
+    margin-top: 40%;
+  
+}

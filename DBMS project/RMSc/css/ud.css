@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400&family=Orbitron:wght@700&family=Pacifico&family=Rubik+Dirt&family=Silkscreen&display=swap');
+
+
+*{
+    margin: 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.maincon {
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/ud2.jpg') no-repeat center fixed ;
+    background-size: cover;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.menu-items {
+    height: auto;
+    width: 20%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background: transparent;
+    border-radius: 50px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0%;
+    margin-right: 6%;
+    margin-top: 50%;
+}
+
+.menu-items ul li {
+    list-style-type: none;
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 8%;
+    padding-left: 3%;
+    width: 200px;
+
+}
+
+.menu-items ul li a {
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+    font-weight: bold; 
+
+    box-shadow: inset 0 0 0 0 #fff;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.menu-items ul li a:hover {
+    color:blue;
+    
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    overflow-y: scroll;
+}
+
+.container .greetings {
+    margin-top: -20px;
+    color: #fff;
+    font-family: "Orbitron";
+    margin-bottom: 10px;
+}
+.container .greetings span {
+    color: #F7931E;
+}
+
+.container .con {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .con .card {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 5%;
+    background: transparent;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+.container .con .card .img {
+    
+    border: 0;
+    border-radius: 20px;
+    display: flex;
+    padding: 1%;
+    justify-content: space-around;
+}
+
+.container .card .img img {
+    width: 400px;
+    height: 250px;
+    background-size: cover;
+    border-radius: 20%;
+}
+
+.container .card .desc {
+    margin-top: 3%;
+    margin-left: 10%;
+    font-family: "Karla";
+    color: #fff;
+}
+
+.container .card .desc h3{
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.container .card .desc .t{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+
+.container .card .btn a {
+    text-decoration: none;
+    color: #F7931E;
+    font-size: 20px;
+}
+
+

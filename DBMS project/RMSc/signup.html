@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h2>Register</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi nostrum dignissimos non excepturi necessitatibus asperiores vitae suscipit sed accusantium illum. Possimus, facilis saepe cumque harum nobis non. Corporis, numquam hic vel deleniti libero asperiores, quis natus fuga eum voluptas, iusto aut sint facere cumque tenetur quia eaque repudiandae error? Pariatur molestiae modi iste ullam ipsum voluptatem optio harum recusandae, iusto nemo! Nulla, quidem quisquam quam magnam dolorem adipisci quod odio!</p>
+
+            <h5>Already have an acoount? <a href="login.html">Login</a></h5>
+        </div>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button class="toggle-btn" type="button" onclick="user()">As User</button>
+                <button class="toggle-btn" type="button" id="man" onclick="manager()">As Manager</button>
+            </div>
+            <div class="signup" id="signu">
+                <form action="connect.php" class="input" method = "POST" id="user">
+                    <input type="text" class="in-fi" name = "name" id="name" placeholder="Name">
+                    <input type="text" class="in-fi" name = "u_name" id="u_name" placeholder="Username">
+                    <input type="text" class="in-fi" name="phnumber" id = "phnumber" placeholder="Phone Number">
+                    <input type="text" class="in-fi" name="cusaddr" id  = "cusaddr" placeholder="Customer Address">
+                    <input type="password" class="in-fi" name="pass" id = "pass" placeholder="Password">
+                    <button type="submit" class = "sb-bt" name = "reg_page">Register</button>
+                </form>
+                <form action="connect.php" class="input" method = "POST" id="manager">
+                    <input type="text" class="in-fi" name = "name_r" id="name1" placeholder="Restaurant Name">
+                    <input type="text" class="in-fi" name = "name_add" id="name2" placeholder="Restaurant Address">
+                    <input type="text" class="in-fi" name="name_e" id = "phnumber1" placeholder="Manager name">
+                    <input type="text" class="in-fi" name="contact" id  = "cusaddr1" placeholder="Contact number">
+                    <input type="text" class="in-fi" name="uname" id  = "cusaddr2" placeholder="Username">
+                    <input type="password" class="in-fi" name="pass_m" id = "pass1" placeholder="Password">
+                    <button type="submit" class = "sb-bt" name = "reg_page_m">Register</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script>
+        var x = document.getElementById("user") ;
+        var y = document.getElementById("manager") ;
+        var z = document.getElementById("btn") ;
+
+        function manager() {
+            x.style.left = "-470px" ;
+            y.style.left = "-105px" ;
+            z.style.left = "120px";
+        }
+
+        function user() {
+            x.style.left = "-100px" ;
+            y.style.left = "470px" ;
+            z.style.left = "0px";
+        }
+
+    </script>
+</body>
+</html>

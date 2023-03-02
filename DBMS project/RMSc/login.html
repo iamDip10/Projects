@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h2>Login</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi nostrum dignissimos non excepturi necessitatibus asperiores vitae suscipit sed accusantium illum. Possimus, facilis saepe cumque harum nobis non. Corporis, numquam hic vel deleniti libero asperiores, quis natus fuga eum voluptas, iusto aut sint facere cumque tenetur quia eaque repudiandae error? Pariatur molestiae modi iste ullam ipsum voluptatem optio harum recusandae, iusto nemo! Nulla, quidem quisquam quam magnam dolorem adipisci quod odio!</p>
+
+            <h5>Not a member? <a href="signup.html">Create a account</a></h5>
+        </div>
+        <div class="form-box">
+
+            <div class="button-box">
+                <div id="btn"></div>
+                <button class="toggle-btn" type="button" onclick="userLog()">As User</button>
+                <button class="toggle-btn" type="button" id="man" onclick="managerLog()">As Manager</button>
+                <button class="toggle-btn" type="button" id="man" onclick="chiefLog()">As Chief</button>
+
+            </div>
+            <div class="login" id="logi">
+                <form action="connect.php" class="input" method = "POST" id="user">
+                    <input type="text" class="lo-fi" name = "name" id="name" placeholder="Username">
+                    <input type="password" class="lo-fi" name="pass" id = "pass" placeholder="Password">
+                    <button type="submit" class = "lo-bt" name = "log_page">Login</button>
+                </form>
+                <form action="connect.php" class="input" method = "POST" id="manager">
+                    <input type="text" class="lo-fi" name = "name_m" id="name1" placeholder="Username">
+                    <input type="password" class="lo-fi" name="pass_m" id = "pass1" placeholder="Password">
+                    <button type="submit" class = "lo-bt" name = "log_page_m">Login</button>
+                </form>
+                <form action="connect.php" class="input" method = "POST" id="chief">
+                    <input type="text" class="lo-fi" name = "name_c" id="name1" placeholder="Chief Username">
+                    <input type="password" class="lo-fi" name="pass_c" id = "pass1" placeholder="Password">
+                    <button type="submit" class = "lo-bt" name = "log_page_c">Login</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("user") ;
+        var y = document.getElementById("manager") ;
+        var z = document.getElementById("btn") ;
+        var c = document.getElementById("chief") ;
+ 
+
+        function managerLog() {
+            x.style.left = "-700px" ;
+            y.style.left = "-110px" ;
+            z.style.left = "120px";
+            c.style.left = "-700px" ;
+            y.style.color = "#fff" ;
+          
+        }
+
+        function userLog() {
+            x.style.left = "-110px" ;
+            y.style.left = "700px" ;
+            z.style.left = "0px";
+            c.style.left = "-700px" ;
+         
+        }
+
+        function chiefLog() {
+            c.style.left = "-100px" ;
+            x.style.left = "-700px"
+            y.style.left = "-700px"
+            z.style.left = "250px";
+           
+        }
+
+
+    </script>
+</body>
+</html>

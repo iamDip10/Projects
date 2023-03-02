@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400&family=Orbitron:wght@700&family=Pacifico&family=Rubik+Dirt&family=Silkscreen&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+    padding: 7%;
+    height: 400px;
+    padding-top: 2%;
+}
+
+.heading {
+    width: auto;
+    height: 30vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/cart.jpg') no-repeat center fixed ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 8%;
+    font-size: 30px;
+    font-family: "Orbitron";
+    color: #fff;
+    background-size: cover;
+    
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #F7931E;
+    padding: 1%;
+    font-family: "Karla";
+    color: aliceblue;
+}
+
+td {
+    border-bottom: 1px solid #F7931E;
+    padding: 20px 30px;
+    word-break: break-all;
+    text-align: center;
+    font-family: "Karla";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.orderbtn {
+    display: flex;
+    flex-direction: row; 
+    justify-content: end;
+    border-top: 1px solid #F7931E;
+    padding-top: 3px ;
+    margin-left: 40%;
+    width: 50%;
+}
+
+.orderbtn p {
+    padding-right: 5%;
+    font-size: 24px;
+    font-family: "Karla";
+    align-items: center;
+}
+
+.orderbtn .btn {
+    padding: 18%;
+    font-family: "Orbitron";
+    border: none;
+    background-color: #F7931E;
+    color: white;
+    border-radius: 10px;
+}

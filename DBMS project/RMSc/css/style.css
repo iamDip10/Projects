@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400&family=Orbitron:wght@700&family=Pacifico&family=Rubik+Dirt&family=Silkscreen&display=swap');
+
+.button-52 {
+    margin-top: 70px;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 20px 50px 20px;
+    outline: 0;
+    border-radius: 30px;
+    border: 2px solid #fff ;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+
+    color: #fff;
+
+    box-shadow: inset 0 0 0 0 #fff;
+    /*color: #fff;*/
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+
+.button-52:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #F7931E;
+    border: #F7931E;
+}
+  
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 850px;
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Cover.jpg') no-repeat center fixed ;
+
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+    transition: 0.2s;
+}
+
+nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /*padding-left: 50px;
+    padding-right: 50px;*/
+    padding: 10px 8%;
+    transition: 0.2s;
+    
+}
+
+
+.logo.sticky {
+    width: 0;
+    height: 0;
+}
+
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+    font-weight: bold; 
+
+    box-shadow: inset 0 0 0 0 #fff;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: black;
+    box-shadow: inset 200px 0 0 0 #fff;
+}
+
+.contents {
+    padding: 100px;
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 650px;
+    color: #fff;
+    font-family: 'Karla';
+    font-weight: 400;
+}
+
+.contents h1 {
+    padding-bottom: 26px;
+    font-family: 'Orbitron';
+}
+
+
+/* About US CSS*/
+
+.abus {
+    
+    padding-top: 70px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Orbitron';
+    color: #F7931E;
+    font-weight: bold;
+}
+
+.aboutUS {
+    transition: 1s;
+    background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
+}
+.img {
+    height: 500px;
+    width: 450px;
+    border-radius: 30px;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content:space-around;
+    
+}
+
+.card {
+    margin: 30px;
+    height: 500px;
+    width: auto;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 30px;
+
+    
+}
+
+.intro {
+    border-radius: 30px;
+    height: 70px;
+    width: 450px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom:-98%;
+    color: #fff;
+    background: rgba(27, 27, 27, 0.5);
+    transition: 0.5s;
+    
+    
+}
+
+.intru {
+    display: flex;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    padding-bottom: 60px;
+    color: #fff;
+    font-family: 'Karla';
+}
+.intro h2 {
+    padding-bottom: 10px;
+    font-family: 'Orbitron';
+    margin-left: 4px;
+    text-align: center;
+}
+
+.intro p {
+    margin-left: 4px;
+    visibility: hidden;
+    opacity: 0;
+    font-family: 'Karla';
+}
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .intro {
+    height: 270px;
+    transition: 0.5s;
+    background: rgba(27, 27, 27, 0.8);
+}
+
+.card:hover .intro p {
+    
+    opacity: 1;
+    visibility: visible;
+    transition: 2s;
+}
+
+/* Our team CSS */
+
+.ourTeam {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('../assets/teamwork.jpg') no-repeat center fixed ;
+    width: 100%;
+    height: 780px;
+    text-align: center;
+    background-size: cover;
+    padding: 5%;
+    color: #F7931E;
+}
+
+.ourTeam h1 {
+    font-family: 'Orbitron';
+    font-weight: bold;
+}
+
+.profiles {
+    width: 100%; 
+    height: 650px;
+    display: flex;
+    justify-content: space-around;
+    padding: 7%;
+    
+}
+
+.profile {
+    flex-basis: 260px;
+}
+
+.profile img {
+    height: 200px;  
+    width: 200px;
+    border-radius: 50%;
+    filter: grayscale(80%);
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.profile .name {
+    font-family: "Karla";
+    font-size: 25px;
+    color: #fff;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.profile .designation {
+    font-family: "Karla";
+    color: #F7931E;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 4px;
+}
+.profile:hover img {
+    filter: grayscale(0%);
+}
+
+.profile p {
+    width: 240px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: "Karla";
+    margin-top: 8px;
+    color: #fff;
+}   
+
+/* .form-box {
+    margin: 13% auto;
+    width: 800px;
+    height: 450px;
+    padding: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    background: #f3ab5a;
+    font-family: "Karla";
+    left: 55% ;
+    top: 0%;
+    transform: translate(-50%, -50%) scale(0.1);
+    position: absolute;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    color: #fff;
+    border-radius: 30px;
+    text-align: center;
+}
+.active {
+    visibility: visible;
+    top: 55%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.button-box {
+    margin-top: 24px;
+    width: 380px; 
+    position: relative;
+    box-shadow: 0 0 20px 3px #F7931E;
+    border-radius: 30px;
+}
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+    margin-left: 3px;
+}
+
+#btn {
+    background: #F7931E;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    position:absolute ;
+    width: 130px ;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.login {
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    position: absolute;
+    width: 220px;
+    padding-left: 13%;
+}
+
+.lo-fi {
+    width: 100%;
+    padding: 5px 0;
+    margin: 20px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #000;
+    outline: none;
+    background: transparent;
+}
+
+.lo-bt {
+    width: 70%;
+    padding: 4%;
+    cursor: pointer;
+    display: block;
+    margin-top: 50px;
+    background: #F7931E;
+    border: 0;
+    border-radius: 30px;
+}
+
+#user {
+    left: -110px;
+    transition: 0.5s;
+}
+#manager {
+    left: 470px ;
+    transition: 0.5s;
+}
+#chief {
+    left: 700px ;
+    transition: 0.5s;
+} */
+
+
+

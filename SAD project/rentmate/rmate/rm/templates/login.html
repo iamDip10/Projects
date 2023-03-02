@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="heading">
+            <img class="imag" src="{% static 'IMG/normal logo.png' %}" alt="logo">
+
+        </div>
+        <div class="login">
+
+            <div class="log">
+                <div class="greetings">
+                    <h2>Welcome!</h2>
+                    <p class="li">Login with your phone number and password!</p>
+                </div>
+                <p class="la">Login as:</p>
+                <form action="{% url 'login' %}" method="post">
+                    {% csrf_token %}
+                    <div class="q1">
+                        <input type="radio" id="res" name="typp" value="Residant">
+                        <label for="res">Residant</label>
+                        <input type="radio" id="land" name="typp" value="Property owner">
+                        <label for="land">Property owner</label>
+                    </div>
+                    <div class="phn">
+                        <input class="phn_num" name="__phn" maxlength="11" id="name" required>
+                        <label for="name" class="label">Enter phone number</label>
+                    </div>
+                    <div class="pass">
+                        <input class="pass_w" name="__pass" type="password" id="passw" required>
+                        <label for="passw" class="plabel">Enter password</label>
+                    </div>
+                    <div class="sub">
+                        <input type="submit" name="submit" id="_sub" value="Login">
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+        <div class="design">
+            <div class="d1" style="opacity: 1;"></div>
+            <div class="d2" style="opacity: 0.9;"></div>
+            <div class="d3" style="opacity: 0.8;"></div>
+            <div class="d4" style="opacity: 0.7;"></div>
+            <div class="d5" style="opacity: 0.6;"></div>
+            <div class="d6" style="opacity: 0.5;"></div>
+            <div class="d7" style="opacity: 0.4;"></div>
+            <div class="d8" style="opacity: 0.3;"></div>
+            <div class="d9" style="opacity: 0.2;"></div>
+            <div class="d10" style="opacity: 0.1;"></div>
+            <div class="d11" style="opacity: 0.17;"></div>
+            <div class="d12" style="opacity: 0.2;"></div>
+            <div class="d13" style="opacity: 0.3;"></div>
+            <div class="d14" style="opacity: 0.4;"></div>
+            <div class="d15" style="opacity: 0.5;"></div>
+            <div class="d16" style="opacity: 0.6;"></div>
+            <div class="d17" style="opacity: 0.7;"></div>
+            <div class="d18" style="opacity: 0.8;"></div>
+            <div class="d19" style="opacity: 0.9;"></div>
+            <div class="d20" style="opacity: 1;"></div>
+
+
+        </div>
+        <div class="desc">
+            <p>Looing for new home to rent? Look no furthur. <span>Rentmate</span> offers a wide variety of houses
+                within your range as well as locality.</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
